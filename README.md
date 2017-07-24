@@ -3,9 +3,13 @@ Adds a python 'window' class that uses the linux cli tool, 'xdotool' to retrieve
 
 ## Dependancies:
 > os
+
 > sys
+
 > subprocess
+
 > termcolor
+
 > xdotool
 
 ## Usage:
