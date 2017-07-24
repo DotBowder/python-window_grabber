@@ -34,7 +34,7 @@ After the window object is created, the object has 5 variables associated with i
 
 Now that you have these variables, you can use them for anything.
 
-To Update the window object with the new window position and size, call the xdotool_window_stat function attached to the window class. The update flag will update the class variables.
+If the target/focus window moves, you can update the window object with the new window position and size. To do this, call the xdotool_window_stat function attached to the window class. The update flag will update the class variables.
 
 > window_object.xdotool_window_stat(update=True)
 
