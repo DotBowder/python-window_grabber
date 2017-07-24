@@ -13,7 +13,8 @@ Adds a python 'window' class that uses the linux cli tool, 'xdotool' to retrieve
 > xdotool
 
 ## Usage:
-Create a window object by initializing the class.
+If you run window_grab.py, by default, it will ask you the user to search for a window title.
+To use the class in your code, start by creating a window class object.
 The input_id can be specified with the xdotool window id.
 The search_term can be specified to initiate a window search. The search will prompt the user to select one of the windows discovered by the search.
 If no parameters are specified, or if the parameters are set to "", the user will be asked to provide a search term, and select a discovered window.
