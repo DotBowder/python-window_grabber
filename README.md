@@ -2,10 +2,11 @@
 Adds a python 'window' class that uses the linux cli tool, 'xdotool' to retrieve the window's position, size, and other information.
 
 ## Dependancies:
-os
-sys
-subprocess
-termcolor
+> os
+> sys
+> subprocess
+> termcolor
+> xdotool
 
 ## Usage:
 Create a window object by initializing the class.
