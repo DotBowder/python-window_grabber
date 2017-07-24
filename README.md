@@ -18,9 +18,13 @@ If no parameters are specified, or if the parameters are set to '', the user wil
 After the window object is created, the object has 5 variables associated with it. These are the meat of the program, the very reason the program exists is to have access to these variables.
 
 > window_object.name # Name of window
+
 > window_object.xdotool_id # xdotool window id
+
 > window_object.pid # PID of window
+
 > window_object.pos # Position of window (x,y)
+
 > window_object.size # Size of window (x,y)
 
 Now that you have these variables, you can use them for anything.
