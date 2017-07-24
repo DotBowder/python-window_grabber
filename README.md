@@ -42,3 +42,6 @@ If the target/focus window moves, you can update the window object with the new 
 > window_object.xdotool_window_stat(update=True)
 
 Now our window object has updated stats for the window we selected.
+
+## Notes:
+When the user is promped to search for a window title, the search-term "0" is reserved to list all windows xdotool can see. If you wish to search all, enter 0.
