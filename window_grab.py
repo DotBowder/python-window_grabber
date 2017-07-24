@@ -88,7 +88,7 @@ class window():
                 print(colored('\nInput Error - No Matching Windows - Program will now exit.', 'red'))
                 sys.exit(0)
 
-application_name = 'Window Identifier'
+application_name = 'Window Grabber'
 version = 0.01
 print('\n------------------------------------------------')
 print('Welcome to the {} application!\nVersion: {}\nTo start, follow the on-screen prompts.'.format(application_name, version))
