@@ -94,4 +94,24 @@ print('\n------------------------------------------------')
 print('Welcome to the {} application!\nVersion: {}\nTo start, follow the on-screen prompts.'.format(application_name, version))
 print('------------------------------------------------\n')
 
-new_window = window() #(search_term='MyProgramName')
+
+def main():
+    print('Would you like to use your mouse to select a window? y/n')
+    userin = input()
+    if userin == 'y':
+        subprocess.run(['clear'])
+        print('Please click on the desired window.')
+        xdotool_id = subprocess.run(['xdotool', 'selectwindow'], stdout=subprocess.PIPE).stdout.decode('utf-8').split('\n')[0]
+        new_window = window(input_id=xdotool_id)
+        pass
+    else:
+        new_window = window() #(search_term='MyProgramName')
+
+    print()
+    print('Window Name:\t"{}'.format(new_window.name))
+    print('Window ID:\t{}'.format(new_window.xdotool_id))
+    print('Window PID:\t{}'.format(new_window.pid))
+    print('Window POS:\t{}'.format(new_window.pos))
+    print('Window SIze:\t{}'.format(new_window.size))
+
+main()
